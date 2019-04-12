@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
 });
 
 function mapStateToProps(state) {
-  console.log(state)
   return {
     user: state.app.user,
     entry: state.app.entry,
