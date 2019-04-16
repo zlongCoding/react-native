@@ -3,6 +3,9 @@ package com.chat;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.imagepicker.ImagePickerPackage;
+import cn.qiuxiang.react.amap3d.AMap3DPackage;
+import com.bolan9999.SpringScrollViewPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
@@ -26,6 +29,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ImagePickerPackage(),
+            new AMap3DPackage(),
+            new SpringScrollViewPackage(),
             new RNGestureHandlerPackage(),
             new VectorIconsPackage(),
             new AsyncStoragePackage()
